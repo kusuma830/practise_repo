@@ -1,13 +1,13 @@
-def add_string(str):
-    if len(str) > 2:
-        if str[-3:] == "ing":
-            str += "ly"
+def add_wording(word):
+    if len(word) > 2:
+        if word[-3:] == "ing":
+            word += "ly"
         else:
-            str += "ing"
-        return str
+            word += "ing"
+        return word
     else:
-        return str
+        return word
 
 
-output = add_string("amazing")
+output = add_wording("amazing")
 print(output)
